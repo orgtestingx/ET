@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>EmperialTech</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> <!--navBar-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> <!--c-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css"/>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Chewy" />
+
+</head>
+<body>
+
+<nav class = "navbar-default">
+   <div class="container-fluid">
+      <div class = "logo"> E.T </div>
+      <ul class = "nav navbar-nav">
+          <li> <a href = ""> home </a> </li>
+          <li> <a href = ""> home </a> </li>
+          <li> <a href = ""> home </a> </li>
+      </ul>
+      <ul class = "nav navbar-nav navbar-right">
+          <li> <a href = ""> Login </a> </li>
+          <li> <a href = ""> Register </a> </li>
+      </ul>
+   </div>
+</nav>
+
+<header class="jumbotron">
+  <div class="container">
+    <img class="img-responsive" src="assets/Iu.png" alt="I.U">
+  </div>
+</header>
+
+<main>
+    <h1>Our Places</h1>
+<div class="container" >
+    <div id="myCarousel" class="carousel slide">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li class="item1 active"></li>
+      <li class="item2"></li>
+      <li class="item3"></li>
+    </ol>
+
+      <div class="carousel-inner" role="listbox">
+        <ul>
+            <li class="item1">
+              <img src="assets/grill.png" alt="Grill" >
+                  <div class="carousel-caption">
+                      <h3></h3>
+                      <p></p>
+                  </div>
+            </li>
+
+            <li class="item2">
+              <img src="assets/sub_connect.png" alt="Sub Connect" >
+            </li>
+
+            <li class="item3">
+              <img src="assets/Iu.png" alt="I.U" >
+            </li>
+          </ul>
+        </div>
+
+          <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+  <script>
+  $(document).ready(function(){
+    // Activate Carousel
+    $("#myCarousel").carousel();
+
+    // Enable Carousel Indicators
+    $(".item1").click(function(){
+      $("#myCarousel").carousel(0);
+    });
+    $(".item2").click(function(){
+      $("#myCarousel").carousel(1);
+    });
+    $(".item3").click(function(){
+      $("#myCarousel").carousel(2);
+    });
+
+    // Enable Carousel Controls
+    $(".left carousel-control").click(function(){
+      $("#myCarousel").carousel("prev");
+    });
+    $(".right carousel-control").click(function(){
+      $("#myCarousel").carousel("next");
+    });
+  });
+  </script>
+</main>
+
+<footer>
+  <p>footer</p>
+</footer>
+
+</body>
+</html>

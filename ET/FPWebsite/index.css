@@ -1,0 +1,48 @@
+
+body{
+  /*
+  width: 168vh;
+  height: 20vh;
+  */
+  width: 1366px;
+  height: 768px;
+}
+
+
+.navbar-default{
+width: 100%;
+box-shadow: 0 5px 10px #efefef;
+}
+
+.jumbotron{
+
+}
+
+.img-responsive{
+}
+
+ul{
+  list-style-type:none;
+}
+
+
+/*.navbar-default{
+width: 1440px;
+height: 43px;
+background-color: #5a438a;
+background-size: cover; }*/
+
+
+.logo /* logo image here*/
+{
+
+}
+
+h1{
+  text-align: center;
+}
+
+footer{
+  background-color: black;
+  padding: 25px;
+}
